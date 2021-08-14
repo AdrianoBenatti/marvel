@@ -1,6 +1,6 @@
 import "./App.css";
 import Header from "./components/Header";
-import CharacterTable from "./components/CharacterTable";
+import ComicTable from "./components/ComicTable";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Search from "./components/Search";
@@ -49,7 +49,7 @@ function App() {
     <div className="container">
       <Header />
       <Search search={(q) => setQuery(q)}></Search>
-      <CharacterTable items={items} isLoading={isLoading} />
+      <ComicTable items={items} isLoading={isLoading} />
     </div>
   );
 }
