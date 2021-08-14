@@ -39,6 +39,14 @@ header {
 
 header img {
   width: 200px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+header img:hover {
+  width: 250px;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .center {
@@ -49,6 +57,9 @@ header img {
 
 .search {
   height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 input[type="text"] {
@@ -57,8 +68,8 @@ input[type="text"] {
   font-size: 20px;
   border: 0;
   border-radius: 5px;
-  width: 60%;
-  margin: auto;
+  width: 100%;
+  margin: 0 150px 0 -22px;
 }
 
 .contents {
@@ -85,6 +96,7 @@ input[type="text"] {
   width: 100%;
   height: 315px;
   object-fit: cover;
+  border-radius: 5px;
 }
 
 .content-inner {
@@ -105,6 +117,7 @@ input[type="text"] {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  border-radius: 5px;
 }
 
 .content-back {
@@ -115,6 +128,7 @@ input[type="text"] {
   backface-visibility: hidden;
   overflow: hidden;
   overflow-y: auto;
+  border-radius: 5px;
 }
 
 .content-back {
@@ -127,6 +141,44 @@ input[type="text"] {
 .content li {
   list-style: none;
   padding-bottom: 10px;
+}
+
+.button-favorite {
+  width: 80px;
+  height: 30px;
+  display: flex;
+  background-color: red;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.button-favorites {
+  width: 80px;
+  height: 43px;
+  display: flex;
+  background-color: red;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.button-favorite:hover {
+  width: 85px;
+  height: 35px;
+  transition: 0.2s;
 }
 
 @media (max-width: 800px) {

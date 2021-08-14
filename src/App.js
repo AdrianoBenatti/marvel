@@ -34,7 +34,7 @@ function App() {
         }
       } else {
         const result = await axios(
-          `http://gateway.marvel.com/v1/public/comics?nameStartsWith=${query}&ts=1&apikey=344d40df0c8cc373141c1dc321fae9cf&hash=${hash}`
+          `http://gateway.marvel.com/v1/public/comics?titleStartsWith=${query}&ts=1&apikey=344d40df0c8cc373141c1dc321fae9cf&hash=${hash}`
         );
         console.log(result.data.data.results);
         setItems(result.data.data.results);

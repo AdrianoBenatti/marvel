@@ -1,12 +1,17 @@
-import React from 'react'
-import logo from '../img/marvel-logo.png'
+import React from "react";
+import logo from "../img/marvel-logo.png";
+
+const clearStorage = () => {
+  localStorage.clear();
+  window.location.reload();
+};
 
 const Header = () => {
-    return (
-        <header className="center">
-            <img src={logo} />
-        </header>
-    )
-}
+  return (
+    <header onClick={clearStorage} className="center">
+      <img className="" src={logo} />
+    </header>
+  );
+};
 
-export default Header
+export default Header;

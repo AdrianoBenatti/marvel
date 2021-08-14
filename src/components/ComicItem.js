@@ -2,7 +2,6 @@ import React from "react";
 
 const ComicItem = ({ item }) => {
   const favorite = (item) => {
-    // getting the previous element and adding the new favorite item
     var previousData = JSON.parse(localStorage.getItem("favorites"));
     previousData.push(item);
     localStorage.setItem("favorites", JSON.stringify(previousData));
@@ -24,7 +23,11 @@ const ComicItem = ({ item }) => {
               <strong>Description:</strong> {item.description}
             </li>
             <li>
-              <button type="button" onClick={() => favorite(item)}>
+              <button
+                className="button-favorite"
+                type="button"
+                onClick={() => favorite(item)}
+              >
                 Favorite
               </button>
             </li>

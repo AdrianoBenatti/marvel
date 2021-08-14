@@ -20,6 +20,9 @@ const Search = ({ search }) => {
           value={text}
         />
       </form>
+      <a className="button-favorites" href="/">
+        Favorites
+      </a>
     </section>
   );
 };
